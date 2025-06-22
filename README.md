@@ -23,38 +23,6 @@ The application analyzes 8 key health parameters:
 7. **Diabetes Pedigree Function** - Family history likelihood
 8. **Age** - Age-related risk factor
 
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Python 3.8 or higher
-- pip (Python package installer)
-
-### Installation
-
-1. **Clone or download this repository**
-   ```bash
-   git clone <repository-url>
-   cd diabetes-prediction
-   ```
-
-2. **Install required packages**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Save the trained model**
-   ```bash
-   python save_model.py
-   ```
-
-4. **Run the application**
-   ```bash
-   python app.py
-   ```
-
-5. **Open your browser**
-   Navigate to `http://localhost:5000`
 
 ## 📊 Model Performance
 
