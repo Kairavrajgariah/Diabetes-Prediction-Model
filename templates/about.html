@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Diabetes Prediction</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .content-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .section-title i {
+            color: #667eea;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .feature-card h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .model-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .disclaimer {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .disclaimer h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #856404;
+        }
+
+        .disclaimer p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .content-section {
+                padding: 25px;
+            }
+
+            .back-btn {
+                position: static;
+                margin-bottom: 20px;
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Prediction
+    </a>
+
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-info-circle"></i> About This Tool</h1>
+            <p>Learn about our simplified AI-powered diabetes prediction system</p>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-brain"></i>
+                How It Works
+            </h2>
+            <p style="font-size: 1.1rem; line-height: 1.7; color: #555;">
+                Our diabetes prediction tool uses advanced machine learning algorithms to assess your risk of developing diabetes. 
+                The system analyzes 4 key health parameters that are clinically proven to be the most important indicators of diabetes risk.
+            </p>
+            
+            <div class="model-stats">
+                <div class="stat-card">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Health Parameters</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Simple</div>
+                    <div class="stat-label">User Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Fast</div>
+                    <div class="stat-label">Prediction</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Accurate</div>
+                    <div class="stat-label">Results</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-list-check"></i>
+                Health Parameters Analyzed
+            </h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>Glucose Level</h4>
+                    <p>Blood glucose levels are the primary indicator of diabetes. Elevated fasting glucose levels (≥126 mg/dL) suggest impaired glucose metabolism and are a key diagnostic criterion for diabetes.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>BMI (Body Mass Index)</h4>
+                    <p>BMI is a key indicator of obesity, which is one of the strongest risk factors for type 2 diabetes. Higher BMI values (≥25) significantly increase diabetes risk.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Age</h4>
+                    <p>Age is a significant risk factor as the prevalence of diabetes increases with age, particularly after 45 years. The risk continues to rise with advancing age.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Blood Pressure</h4>
+                    <p>Hypertension is commonly associated with diabetes and metabolic syndrome. High blood pressure (≥130/80) can indicate insulin resistance and increased diabetes risk.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-cogs"></i>
+                Technical Details
+            </h2>
+            <p style="font-size: 1.1rem; line-height: 1.7; color: #555; margin-bottom: 20px;">
+                Our simplified prediction model is built using state-of-the-art machine learning techniques:
+            </p>
+            <ul style="font-size: 1.1rem; line-height: 1.7; color: #555; margin-left: 20px;">
+                <li><strong>XGBoost Algorithm:</strong> An advanced gradient boosting framework optimized for medical prediction tasks</li>
+                <li><strong>Feature Selection:</strong> Uses only the 4 most clinically relevant parameters for simplicity and accuracy</li>
+                <li><strong>Data Preprocessing:</strong> StandardScaler for feature normalization to ensure consistent predictions</li>
+                <li><strong>Class Balancing:</strong> SMOTETomek technique to handle imbalanced dataset and improve prediction accuracy</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-shield-alt"></i>
+                Privacy & Security
+            </h2>
+            <p style="font-size: 1.1rem; line-height: 1.7; color: #555; margin-bottom: 20px;">
+                We prioritize your privacy and data security:
+            </p>
+            <ul style="font-size: 1.1rem; line-height: 1.7; color: #555; margin-left: 20px;">
+                <li>Your health data is processed locally and not stored on our servers</li>
+                <li>No personal information is collected or transmitted</li>
+                <li>All predictions are made in real-time without data persistence</li>
+                <li>We use secure HTTPS connections for all data transmission</li>
+            </ul>
+        </div>
+
+        <div class="disclaimer">
+            <h4><i class="fas fa-exclamation-triangle"></i> Important Disclaimer</h4>
+            <p>
+                This diabetes prediction tool is designed for educational and informational purposes only. 
+                It should not be used as a substitute for professional medical advice, diagnosis, or treatment. 
+                The predictions provided by this tool are based on statistical analysis and machine learning algorithms, 
+                but they are not a definitive medical diagnosis.
+            </p>
+            <p style="margin-top: 15px;">
+                <strong>Always consult with qualified healthcare professionals for:</strong>
+            </p>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>Proper medical diagnosis and treatment</li>
+                <li>Interpretation of your health data</li>
+                <li>Personalized medical advice</li>
+                <li>Management of diabetes or other health conditions</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> 
