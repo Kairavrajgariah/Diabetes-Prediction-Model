@@ -97,24 +97,49 @@ This tool is designed for **educational and informational purposes only**. It sh
 - Personalized medical advice
 - Management of diabetes or other health conditions
 
-## 🚀 Deployment
+🚀 Deployment
+🔧 Local Development
+To run the app locally:
 
-### Local Development
-```bash
+bash
+Copy
+Edit
 python app.py
-```
+🌐 Deployment on Render
+You can easily deploy this app on Render:
 
-### Production Deployment
-For production deployment, consider using:
-- **Gunicorn**: WSGI server
-- **Nginx**: Reverse proxy
-- **HTTPS**: SSL certificate for security
+📦 1. Prerequisites
+Push your project to a GitHub repository
 
-Example with Gunicorn:
-```bash
-pip install gunicorn
-gunicorn -w 4 -b 0.0.0.0:5000 app:app
-```
+Ensure you have a requirements.txt file
+
+(Optional) Add runtime.txt with your Python version (e.g., python-3.10.5)
+
+⚙️ 2. Create a Web Service
+Go to Render Dashboard
+
+Click "New Web Service"
+
+Connect your GitHub repo
+
+🛠️ 3. Configuration
+Set the following:
+
+Setting	Value
+Build Command	pip install -r requirements.txt
+Start Command	gunicorn app:app
+Environment	Python 3.x
+
+You can also set environment variables in the "Environment" tab (e.g., API keys, DB URLs).
+
+🚀 Done!
+Render will:
+
+Install dependencies
+
+Launch your app on a public URL
+
+Automatically redeploy on every push to your repo
 
 ## 🤝 Contributing
 
