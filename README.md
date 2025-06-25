@@ -97,7 +97,7 @@ This tool is designed for **educational and informational purposes only**. It sh
 - Personalized medical advice
 - Management of diabetes or other health conditions
 
-🚀 Deployment
+## 🚀 Deployment
 🔧 Local Development
 To run the app locally:
 
@@ -105,24 +105,24 @@ bash
 Copy
 Edit
 python app.py
-🌐 Deployment on Render
+## 🌐 Deployment on Render
 You can easily deploy this app on Render:
 
-📦 1. Prerequisites
+**📦 1. Prerequisites**
 Push your project to a GitHub repository
 
 Ensure you have a requirements.txt file
 
 (Optional) Add runtime.txt with your Python version (e.g., python-3.10.5)
 
-⚙️ 2. Create a Web Service
+**⚙️ 2. Create a Web Service**
 Go to Render Dashboard
 
 Click "New Web Service"
 
 Connect your GitHub repo
 
-🛠️ 3. Configuration
+**🛠️ 3. Configuration**
 Set the following:
 
 Setting	Value
@@ -132,7 +132,7 @@ Environment	Python 3.x
 
 You can also set environment variables in the "Environment" tab (e.g., API keys, DB URLs).
 
-🚀 Done!
+**🚀 Done!**
 Render will:
 
 Install dependencies
