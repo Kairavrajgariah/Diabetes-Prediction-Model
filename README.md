@@ -42,18 +42,26 @@ The application analyzes 8 key health parameters:
 ## 📁 Project Structure
 
 ```
-diabetes-prediction/
-├── app.py                 # Main Flask application
-├── save_model.py          # Script to save trained model
-├── diabetes.csv           # Training dataset
-├── requirements.txt       # Python dependencies
-├── README.md             # Project documentation
-├── templates/            # HTML templates
-│   ├── index.html        # Main prediction page
-│   └── about.html        # About page
-├── diabetes_model.pkl    # Trained XGBoost model (generated)
-├── scaler.pkl           # StandardScaler (generated)
-└── pca.pkl              # PCA transformer (generated)
+Diabetes-Prediction-Model/
+├── templates/           
+│   ├── index.html       
+│   └── about.html 
+├── model/         
+│   ├── app.py
+│   ├── wsgi.py     
+│   └── save_model.py
+├── saved_models/          
+│   ├── diabetes_model.pkl
+│   ├── pca.pkl    
+│   └── scaler.pkl
+├── visualizations/          
+│   ├── Confusion Matrix.png  
+│   └── ROC Curve.png
+├── dataset/         
+│   └── diabetes.csv
+├── requirements.txt
+├── runtime.txt       
+├── README.md             
 ```
 
 ## 🔧 Model Details
