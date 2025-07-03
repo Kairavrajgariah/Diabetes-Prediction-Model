@@ -59,9 +59,11 @@ Diabetes-Prediction-Model/
 │   └── ROC Curve.png
 ├── dataset/         
 │   └── diabetes.csv
+├── Diabetes.ipynb
+├── LISENCE
 ├── requirements.txt
 ├── runtime.txt       
-├── README.md             
+└── README.md             
 ```
 
 ## 🔧 Model Details
